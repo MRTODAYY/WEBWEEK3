@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zhangjiaqi 的前端作品集</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fa-solid fa-laptop-code"></i>zhangjiaqi 的前端作品集</h1>
+      <p>这是我做过的前端网页作品，点击卡片就能跳转到具体的页面！</p>
+    </header>
+
+    <div id="meals" class="meals-container">
+      <div class="meal" data-url="https://todo-3ux1.vercel.app/">
+        <img src="./img/register.png" alt="Register 注册表单页面截图">
+        <div class="meal-info">
+          <h3 class="meal-title">Register 注册表单 <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+          <p class="meal-desc">注册表单的输入校验：必填、长度、邮箱格式和两次密码一致。</p>
+          <div class="meal-meta">
+            <div class="meal-category">Register</div>
+            <span class="meal-index" aria-hidden="true">01</span>
+          </div>
+          <p class="meal-url">todo-3ux1.vercel.app</p>
+        </div>
+      </div>
+
+      <div class="meal" data-url="https://webweek2.vercel.app/">
+        <img src="./img/quiz.png" alt="Quiz Time 答题游戏开始页截图">
+        <div class="meal-info">
+          <h3 class="meal-title">Quiz Time 答题游戏 <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+          <p class="meal-desc">开始页、题目页到结果页的完整流程，带进度条和分数统计。</p>
+          <div class="meal-meta">
+            <div class="meal-category">Quiz</div>
+            <span class="meal-index" aria-hidden="true">02</span>
+          </div>
+          <p class="meal-url">webweek2.vercel.app</p>
+        </div>
+      </div>
+
+      <div class="meal" data-url="https://week22.vercel.app/">
+        <img src="./img/recipe.png" alt="Recipe Finder 食谱搜索页面截图">
+        <div class="meal-info">
+          <h3 class="meal-title">Recipe Finder 食谱搜索 <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+          <p class="meal-desc">调用 TheMealDB 接口搜索菜谱，展示菜品详情、配料与视频链接。</p>
+          <div class="meal-meta">
+            <div class="meal-category">Recipe</div>
+            <span class="meal-index" aria-hidden="true">03</span>
+          </div>
+          <p class="meal-url">week22.vercel.app</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

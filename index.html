@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zhangjiaqi — 前端作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 顶栏：像素方块 logo + 毛玻璃按钮 -->
+  <header class="site-header">
+    <a class="logo" href="#intro" aria-label="回到顶部">
+      <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="#ffffff">
+          <rect x="0" y="2" width="8" height="32"></rect>
+          <rect x="2" y="0" width="32" height="8"></rect>
+          <rect x="28" y="2" width="8" height="32"></rect>
+          <rect x="2" y="28" width="32" height="8"></rect>
+          <rect x="14" y="14" width="8" height="8"></rect>
+        </g>
+      </svg>
+    </a>
+    <a class="header-cta" href="#contact">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1h12c1.1 0 2 .9 2 2v7c0 1.1-.9 2-2 2H5l-3 3V3c0-1.1.9-2 2-2z"></path></svg>
+      <span>联系我</span>
+    </a>
+  </header>
+
+  <!-- 左侧固定导航 -->
+  <nav class="side-nav" aria-label="页面分区">
+    <a href="#intro" data-nav="intro">Intro</a>
+    <a href="#works" data-nav="works">Works</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+  </nav>
+
+  <!-- 首屏 -->
+  <section class="hero" id="intro">
+    <div class="hero-inner">
+      <h1 class="reveal delay-3"><span>Front<em>end</em></span><span>Portfolio</span></h1>
+      <p class="hero-sub reveal delay-3">zhangjiaqi 的前端作品集 —— 三个月从零开始的网页练习，全部上线可访问。</p>
+    </div>
+  </section>
+
+  <!-- 作品 -->
+  <section class="section" id="works">
+    <h2 class="statement reveal">
+      三个作品，三种<span class="dim">不同类型的</span><br>
+      <em>前端实现</em>
+    </h2>
+
+    <div class="works">
+
+      <article class="work reveal" data-url="https://todo-3ux1.vercel.app/">
+        <a class="work-media" href="https://todo-3ux1.vercel.app/" target="_blank" rel="noopener">
+          <img src="./img/register.png" alt="Register 注册表单页面截图">
+        </a>
+        <div class="work-body">
+          <span class="work-no">Project 01</span>
+          <h3 class="work-title">Register<br><em>注册表单</em></h3>
+          <p class="work-desc">注册表单的完整输入校验：必填判断、长度区间、邮箱正则，以及两次密码一致性检查，错误与成功状态分别用红绿边线提示。</p>
+          <div class="work-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">表单校验</span>
+          </div>
+          <a class="work-link" href="https://todo-3ux1.vercel.app/" target="_blank" rel="noopener">查看页面 →</a>
+        </div>
+      </article>
+
+      <article class="work reveal" data-url="https://webweek2.vercel.app/">
+        <a class="work-media" href="https://webweek2.vercel.app/" target="_blank" rel="noopener">
+          <img src="./img/quiz.png" alt="Quiz Time 答题游戏开始页截图">
+        </a>
+        <div class="work-body">
+          <span class="work-no">Project 02</span>
+          <h3 class="work-title">Quiz Time<br><em>答题游戏</em></h3>
+          <p class="work-desc">从开始页、题目页到结果页的完整流程，包含题目进度、实时计分、进度条动画和结果评价，答完之后可以重新开始。</p>
+          <div class="work-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">状态切换</span>
+          </div>
+          <a class="work-link" href="https://webweek2.vercel.app/" target="_blank" rel="noopener">查看页面 →</a>
+        </div>
+      </article>
+
+      <article class="work reveal" data-url="https://week22.vercel.app/">
+        <a class="work-media" href="https://week22.vercel.app/" target="_blank" rel="noopener">
+          <img src="./img/recipe.png" alt="Recipe Finder 食谱搜索页面截图">
+        </a>
+        <div class="work-body">
+          <span class="work-no">Project 03</span>
+          <h3 class="work-title">Recipe Finder<br><em>食谱搜索</em></h3>
+          <p class="work-desc">调用 TheMealDB 接口做食谱搜索，卡片列表展示菜品，点进去可以看完整做法、配料清单和视频链接，带空结果提示。</p>
+          <div class="work-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">REST API</span>
+          </div>
+          <a class="work-link" href="https://week22.vercel.app/" target="_blank" rel="noopener">查看页面 →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="contact" id="contact">
+    <h2 class="reveal">一起<br><em>做点东西</em></h2>
+    <a class="contact-mail reveal delay-1" href="https://github.com/MRTODAYY" target="_blank" rel="noopener">
+      github.com/MRTODAYY
+    </a>
+    <p class="contact-note reveal delay-2">zhangjiaqi · 前端作业作品集 · 2025</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
